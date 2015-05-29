@@ -43,46 +43,25 @@ git pull
 
 ## Features
 
-### Multiple languages support, including: English / Russian / French / German / Simplified Chinese / Traditional Chinese.
+### English/Simplified Chinese language support.
 
-Default language is English.
-
-```yml
-language: en
-# language: zh-Hans
-# language: fr-FR
-# language: zh-hk
-# language: zh-tw
-# language: ru
-# language: ru
-# language: de
-```
-
-Set `language` field as following in site `_config.yml` to change to Chinese.
+> Default language is English.
+> Set `language` field as following in site `_config.yml` to change to Chinese.
 
 ```yml
 language: zh-Hans
 ```
 
-### Comment support.
+### DuoShuo comment support.
 
-NexT has native support for `DuoShuo` and `Disqus` comment systems.
-
-Add the following snippets to your `_config.yml`:
+> Add `duoshuo` field to site `_config.yml`. For instance
 
 ```yml
 duoshuo:
   enable: true
-  shortname: your-duoshuo-shortname
+  shortname: duoshuo-shortname
 ```
 
-OR
-
-```yml
-disqus:
-   enable: true
-   shortname: your-disqus-shortname
-```
 
 ### Tags page.
 
@@ -104,19 +83,6 @@ disqus:
           home: /
           archives: /archives
           tags: /tags
-
-### Social Media
-
-NexT can automatically add links to your Social Media accounts:
-
-```yml
-social:
-  GitHub: your-github-url
-  Twitter: your-twitter-url
-  Weibo: your-weibo-url
-  DouBan: your-douban-url
-  ZhiHu: your-zhihu-url
-``` 
 
 ### Feed link.
 
@@ -154,10 +120,6 @@ menu:
 
 # Favicon
 favicon: /favicon.ico
-
-# Avatar (put the image into next/source/images/)
-# can be any image format supported by web browsers (JPEG,PNG,GIF,SVG,..)
-avatar: /default_avatar.png
 
 # Code highlight theme
 # available: normal | night | night eighties | night blue | night bright

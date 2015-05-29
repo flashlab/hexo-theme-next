@@ -1,17 +1,15 @@
-# when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
 menu:
-  home: /
+  #home: /
   #categories: /categories
-  #about: /about
   archives: /archives
   tags: /tags
-  #commonweal: /404.html
+  sam: /sam
 
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo,next"
+keywords: "zzbd,flashlab,个人博客"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -21,15 +19,15 @@ rss:
 # Icon fonts
 # Place your font into next/source/fonts, specify directory-name and font-name here
 # Avialable: default | linecons | fifty-shades | feather
-icon_font: default
+# icon_font: default
 #icon_font: fifty-shades
 #icon_font: feather
-#icon_font: linecons
+icon_font: linecons
 
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night bright
 
 
 # MathJax Support
@@ -37,16 +35,7 @@ mathjax:
 
 
 # Schemes
-#scheme: Mist
-
-
-# Sidebar, available value:
-#  - post    expand on posts automatically. Default.
-#  - always  expand for all pages automatically
-#  - hide    expand only when click on the sidebar toggle icon.
-sidebar: post
-#sidebar: always
-#sidebar: hide
+scheme: Mist
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.
@@ -73,4 +62,4 @@ js: js
 images: images
 
 # Theme version
-version: 0.4.3
+version: 0.4.2

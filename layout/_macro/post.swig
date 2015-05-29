@@ -77,7 +77,7 @@
         </div>
       {% endif %}
 
-      {% if is_index %}
+      {% if is_home() %}
         {% if post.description %}
           {{ post.description }}
           <div class="post-more-link text-center">
