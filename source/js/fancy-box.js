@@ -7,6 +7,9 @@ $(document).ready(function() {
       $imageWrapLink = $image.wrap('<a href="' + this.getAttribute('src') + '"></a>').parent('a');
     }
     $imageWrapLink.addClass('fancybox');
+    if(this.title){
+      $imageWrapLink.attr("title",this.title);
+    }
   });
 });
 $('.fancybox').fancybox({

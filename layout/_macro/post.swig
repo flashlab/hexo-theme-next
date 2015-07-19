@@ -1,7 +1,7 @@
 {% macro render(post, is_index, post_extra_class) %}
 
-  <div class="post post-type-{{ post.type | default('normal') }} {{ post_extra_class | default('') }}">
-    <div class="post-header">
+  <article class="post post-type-{{ post.type | default('normal') }} {{ post_extra_class | default('') }}">
+    <header class="post-header">
 
       {# Not to show title for quote posts that do not have a title #}
       {% if not (is_index and post.type === 'quote' and not post.title) %}
@@ -26,7 +26,10 @@
 
       <div class="post-meta">
         <span class="post-time">
-          {{ __('post.posted') }} {{ date(post.date, 'YYYY-MM-DD') }}
+          {{ __('post.posted') }}
+          <time datetime="{{ post.date|date('c') }}" content="{{ post.date|date('Y-m-d') }}">
+          {{ date(post.date, config.date_format) }}
+          </time>
         </span>
 
         {% if post.categories and post.categories.length %}
@@ -62,7 +65,7 @@
           {% endif %}
         {% endif %}
       </div>
-    </div>
+    </header>
 
     <div class="post-body">
 
@@ -85,19 +88,21 @@
               {{ __('post.read_more') }} &raquo;
             </a>
           </div>
-          {% elif post.excerpt  %}
+        {% elif post.excerpt %}
           {{ post.excerpt }}
           <div class="post-more-link text-center">
             <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}">
               {{ __('post.read_more') }} &raquo;
             </a>
           </div>
+        {% elif theme.auto_excerpt.enable %}
+          <span>{{ post.content | striptags | truncate(theme.auto_excerpt.length) }}</span>
         {% else %}
-          {{ post.content }}
+          <span>{{ post.content }}</span>
         {% endif %}
       {% else %}
-        {{ post.content }}
-      {% endif  %}
+        <span>{{ post.content }}</span>
+      {% endif %}
     </div>
 
     <div class="post-footer">
@@ -130,6 +135,6 @@
         <div class="post-eof"></div>
       {% endif %}
     </div>
-  </div>
+  </article>
 
 {% endmacro %}
