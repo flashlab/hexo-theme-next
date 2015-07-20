@@ -47,7 +47,7 @@
           </span>
         {% endif %}
 
-        {% if post.comments %}
+        {% if post.comments and false %}
           {% if (config.duoshuo and config.duoshuo.shortname) or config.duoshuo_shortname %}
             <span class="post-comments-count">
             &nbsp; | &nbsp;

@@ -1,4 +1,4 @@
-{% if not (theme.duoshuo and theme.duoshuo.shortname) and not theme.duoshuo_shortname %}
+{% if page.comments_show and not theme.duoshuo_shortname %}
 
   {% if theme.disqus_shortname %}
 
