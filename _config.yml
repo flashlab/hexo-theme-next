@@ -61,9 +61,9 @@ auto_excerpt:
   enable: false
   length: 150
 
-# Use Lato font
+# Use Galdeano, Cuprum font
 # Note: this option is avialable only when the language is not `zh-Hans`
-use_font_lato:
+use_font_es: true
 
 
 ## DO NOT EDIT THE FOLLOWING SETTINGS
