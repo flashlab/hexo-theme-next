@@ -3,6 +3,10 @@
   <script type="text/javascript" src="{{ url_for(theme.vendors) }}/velocity/velocity.min.js"></script>
   <script type="text/javascript" src="{{ url_for(theme.vendors) }}/velocity/velocity.ui.min.js"></script>
 
+  {% if page.user_script %}
+    {% include 'custom.swig' %}
+  {% endif %}
+
   <script type="text/javascript" src="{{ url_for(theme.js) }}/motion_global.js?v={{ theme.version }}" id="motion.global"></script>
 
 {% else %}
