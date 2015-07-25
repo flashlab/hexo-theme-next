@@ -22,7 +22,7 @@ rss:
 # Icon fonts
 # Place your font into next/source/fonts, specify directory-name and font-name here
 # Avialable: default | linecons | fifty-shades | feather
-icon_font: linecons
+icon_font: custom
 #icon_font: fifty-shades
 #icon_font: feather
 #icon_font: linecons
@@ -73,7 +73,7 @@ use_font_es: true
 use_motion: true
 
 # Fancybox
-fancybox: true
+fancybox: 
 
 # Static files
 vendors: vendors

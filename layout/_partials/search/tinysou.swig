@@ -1,4 +1,4 @@
-{# 集成 tinysou 站内搜索功能#}
+{# tinysou code block #}
 <form class="site-search-form" >
   <input type="text" id="ts-search-input" class="menu-search-input">
 </form>
