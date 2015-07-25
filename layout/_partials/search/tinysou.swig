@@ -3,8 +3,13 @@
   <input type="text" id="ts-search-input" class="menu-search-input">
 </form>
 <script>
+  var customRenderActFunction = function(item) {
+    var out = '<p class="title">' + item['document']['title'].slice(0,-14) + '</p>';
+    return out;
+  };
   var option = {
-    engineKey: '{{ config.tinysou_Key }}'
+    engineKey: '{{ config.tinysou_Key }}',
+    renderActFunction: customRenderActFunction
   };
   (function(w,d,t,u,n,s,e){
     s = d.createElement(t);
