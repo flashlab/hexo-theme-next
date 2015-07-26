@@ -44,7 +44,9 @@
                 <div class="feed-link text-center">
                   <a href="{{ url_for(theme.menu.about) }}">
                     <i class="menu-item-icon"></i>
-                    　　&gt;&gt;留言&lt;&lt;　　
+                    <i class="icon-happy"></i>
+                    cd about&nbsp;&amp;&amp;&nbsp;rm -rf
+                    <i class="icon-unhappy"></i>
                   </a>
                 </div>
               {% endif %}

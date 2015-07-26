@@ -4,7 +4,7 @@
 </form>
 <script>
   var customRenderActFunction = function(item) {
-    var out = '<p class="title">' + item['document']['title'].slice(0,-14) + '</p>';
+    var out = '<p class="title">' + item['document']['title'].split(" // ")[0] + '</p>';
     return out;
   };
   var option = {
