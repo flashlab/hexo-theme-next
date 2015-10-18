@@ -33,7 +33,7 @@ $text-color                   = $black-light
 
 // Global link color.
 $link-color                   = $black-deep
-$link-hover-color             = $black-deep
+$link-hover-color             = $black-light
 $link-decoration-color        = $grey-light
 $link-decoration-hover-color  = $black-deep
 
@@ -52,11 +52,17 @@ $body-bg-color                = white
 // Font families.
 $font-family-sans-serif   = "Avenir Next", Avenir, Tahoma, Vendana, sans-serif
 $font-family-serif        = "PT Serif", Cambria, Georgia, "Times New Roman", serif
-$font-family-monospace    = "PT Mono", Consolas, Monaco, Menlo, monospace
-$font-family-chinese      = "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei"
+$font-family-monospace    = "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace
+$font-family-chinese      = "Microsoft YaHei"
 $font-family-base         = Galdeano, $font-family-chinese, sans-serif
-$font-family-headings     = Cuprum, Cambria, Georgia, $font-family-chinese, "Times New Roman", serif
+$font-family-headings     = Cuprum, $font-family-chinese, sans-serif
 $font-family-posts        = $font-family-base
+
+// Font Weight
+$font-weight-lighter      = 200;
+$font-weight-light        = 300;
+$font-weight-bold         = 600;
+$font-weight-bolder       = 700;
 
 // Font size
 $font-size-base           = 16px
@@ -65,8 +71,12 @@ $font-size-smaller        = $font-size-base - 4px
 $font-size-large          = $font-size-base + 2px
 
 // Headings font size
-$font-size-headings-base  = 28px
 $font-size-headings-step  = 2px
+$font-size-headings-base  = 24px
+$font-size-headings-small   = $font-size-headings-base - $font-size-headings-step;
+$font-size-headings-smaller = $font-size-headings-small - $font-size-headings-step;
+$font-size-headings-large   = $font-size-headings-base + $font-size-headings-step;
+$font-size-headings-larger  = $font-size-headings-large + $font-size-headings-step;
 
 // Global line height
 $line-height-base         = 1.7
@@ -138,8 +148,9 @@ $pagination-active-border       = $grey-light
 // Layout sizes
 // --------------------------------------------------
 
-$main-desktop                   = 960px
+$main-desktop                   = 1200px
 $content-desktop                = 700px
+$content-desktop-large          = 900px
 $sidebar-desktop                = 240px
 $content-desktop-padding        = 40px
 $footer-height                  = 50px

@@ -7,8 +7,7 @@
 
 <body>
 
-  {% include '_partials/old-browsers.swig' %}
-  {% include '_scripts/analytics.swig' %}
+  {# include '_partials/old-browsers.swig' #}
 
   <div class="container one-column {% block page_class %}{% endblock %}">
     <div class="headband"></div>
@@ -82,11 +81,14 @@
       if (CONFIG.sidebar === 'always') {
           displaySidebar();
       }
+
+      motionIntegrator.bootstrap();
     });
 </script>
 {% include '_scripts/tinysou.swig' %}
 {% include '_scripts/mathjax.swig' %}
 {% block comment_system %}{% endblock %}
 {% include '_scripts/baidushare.swig' %}
+{% include '_scripts/analytics.swig' %}
 </body>
 </html>

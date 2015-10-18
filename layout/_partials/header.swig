@@ -1,9 +1,11 @@
 <h1 class="site-meta">
   <span class="logo-line-before"><i></i></span>
   <a href="{{ config.root }}" class="brand" rel="start">
-      <span class="logo">
-        <i class="icon-logo"></i>
-      </span>
+      {% if not theme.scheme %}
+        <span class="logo">
+          <i class="icon-logo"></i>
+        </span>
+      {% endif %}
       <span class="site-title">{{ config.title }}</span>
   </a>
   <span class="logo-line-after"><i></i></span>
@@ -26,8 +28,10 @@
         {% set itemName = name.toLowerCase() %}
         <li class="menu-item menu-item-{{ itemName }}">
           <a href="{{ url_for(path) }}" rel="section">
-            <i class="menu-item-icon icon-{{ itemName }}"></i> <br />
-            {{ __('menu.' + itemName) }}
+            {% if not theme.scheme %}
+              <i class="menu-item-icon icon-{{ itemName }}"></i>
+            {% endif %}
+            <br />{{ __('menu.' + itemName) }}
           </a>
         </li>
       {% endfor %}
