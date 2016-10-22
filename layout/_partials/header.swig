@@ -28,7 +28,7 @@
 
 
 <nav class="site-nav">
-  {% set hasSearch = theme.swiftype_key || theme.tinysou_Key || config.search %}
+  {% set hasSearch = theme.swiftype_key || config.search %}
   {% set isMist = theme.scheme === 'Mist'%}
 
   {% if theme.menu %}
