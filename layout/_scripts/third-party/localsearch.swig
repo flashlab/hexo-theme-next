@@ -4,10 +4,13 @@
     var scrollTop = '';
     var newHeight = '100';
     var isfetched = false;
+    var isXml = true;
     // Search DB path;
     var search_path = "{{ config.search.path }}";
     if (search_path.length == 0) {
-       search_path = "search.xml";
+      search_path = "search.xml";
+    } else if (search_path.endsWith("json")) {
+      isXml = false;
     }
     var path = "{{ config.root }}" + search_path;
     // monitor main search box;
@@ -35,7 +38,7 @@
     'use strict';
     $.ajax({
         url: path,
-        dataType: "xml",
+        dataType: isXml ? "xml" : "json",
         async: true,
         beforeSend: function (){
             $('.site-search-form>span').toggleClass('fa-spin');
@@ -45,17 +48,17 @@
             $('.site-search-form>span').toggleClass('fa-spin');
             $('#search-input').prop('disabled', function(i, v) { return !v; });
         },
-        success: function( xmlResponse ) {
+        success: function(res) {
             // get the contents from search data
             isfetched = true;
             $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
+            var datas = isXml ? $("entry", res).map(function() {
                 return {
                     title: $( "title", this ).text(),
                     content: $("content",this).text(),
                     url: $( "url" , this).text()
-                };
-            }).get();
+                }
+            }).get() : res;
             var $input = document.getElementById(search_id);
             var $resultContent = document.getElementById(content_id);
             $input.addEventListener('input', function(){
