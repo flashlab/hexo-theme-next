@@ -12,10 +12,18 @@
   -webkit-transform: translateZ(0);
 
   +tablet() {
-    display: none;
+    right: 20px;
+    bottom: 45px;
+    -moz-opacity: 0.8;  
+    -khtml-opacity: 0.8;  
+    opacity: 0.8;
   }
   +mobile() {
-    display: none;
+    right: 20px;
+    bottom: 45px;
+    -moz-opacity: 0.8;  
+    -khtml-opacity: 0.8;  
+    opacity: 0.8;
   }
 }
 
@@ -32,9 +40,7 @@
 
   &:first-child { margin-top: 0; }
   +mobile() {
-    width: 22px;
     height: 2px;
-    background: $text-color;
     border-radius: 1px;
     margin-top: 4px;
   }
