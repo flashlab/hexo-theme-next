@@ -11,19 +11,20 @@
     <div class="sidebar-inner">
 
       {% set display_toc = is_post and theme.toc.enable %}
+      {% set deactive_toc = not display_toc or toc(page.content).length <= 1 %}
 
       {% if display_toc %}
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc {% if not deactive_toc %} sidebar-nav-active {% endif %}" data-target="post-toc-wrap" >
             {{ __('sidebar.toc') }}
           </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
+          <li class="sidebar-nav-overview {% if deactive_toc %} sidebar-nav-active {% endif %}" data-target="site-overview">
             {{ __('sidebar.overview') }}
           </li>
         </ul>
       {% endif %}
 
-      <section class="site-overview sidebar-panel {% if not display_toc %} sidebar-panel-active {% endif %}">
+      <section class="site-overview sidebar-panel {% if deactive_toc %} sidebar-panel-active {% endif %}">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}"
@@ -112,7 +113,7 @@
       </section>
 
       {% if display_toc %}
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+        <section class="post-toc-wrap motion-element sidebar-panel {% if not deactive_toc %} sidebar-panel-active {% endif %}">
           <div class="post-toc">
             {% if page.toc_number === undefine %}
               {% set toc = toc(page.content, { "class": "nav", list_number: theme.toc.number }) %}
