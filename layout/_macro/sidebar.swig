@@ -8,6 +8,7 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    <div id="sidebar-dimmer"></div>
     <div class="sidebar-inner">
 
       {% set display_toc = is_post and theme.toc.enable %}
@@ -120,7 +121,7 @@
       </section>
 
       {% if display_toc %}
-        <section class="post-toc-wrap motion-element sidebar-panel {% if not deactive_toc %} sidebar-panel-active {% endif %}">
+        <section class="post-toc-wrap sidebar-panel {% if not deactive_toc %} sidebar-panel-active motion-element{% endif %}">
           <div class="post-toc">
             {% if page.toc_number === undefine %}
               {% set toc = toc(page.content, { "class": "nav", list_number: theme.toc.number }) %}
