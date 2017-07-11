@@ -229,9 +229,6 @@ mathjax:
 # Baidu Analytics ID
 #baidu_analytics:
 
-# Duoshuo ShortName
-#duoshuo_shortname:
-
 # Disqus
 disqus_shortname: flashlab
 
@@ -247,9 +244,6 @@ disqus_shortname: flashlab
 # Warning: JiaThis does not support https.
 #add_this_id:
 
-# Share
-#duoshuo_share: true
-
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
 #google_site_verification:
@@ -260,16 +254,6 @@ disqus_shortname: flashlab
 
 # CNZZ count
 #cnzz_siteid:
-
-
-# Make duoshuo show UA
-# user_id must NOT be null when admin_enable is true!
-# you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: false
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: ROOT
 
 
 # Facebook SDK Support.

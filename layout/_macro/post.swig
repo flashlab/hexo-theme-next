@@ -81,14 +81,7 @@
           {% endif %}
 
           {% if page.comments and page.comments_show %}
-            {% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %}
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="{{ post.path }}" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            {% elseif theme.facebook_comments_plugin.enable %}
+            {% if theme.facebook_comments_plugin.enable %}
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
