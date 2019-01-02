@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Miao,mqclass,MQ学院,原创文学,喵会儿"
+keywords: "zzbd,flashlab,个人博客"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -14,7 +14,7 @@ keywords: "Miao,mqclass,MQ学院,原创文学,喵会儿"
 rss:
 
 # Specify the date when the site was setup
-since: 2018
+since: 2009
 
 # Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
 # See: https://support.google.com/webmasters/answer/139066
@@ -122,12 +122,12 @@ font:
 
 # Social links
 social:
-#   Github: your-github-url
+  GitHub: https://github.com/flashlab
 #   Twitter: your-twitter-url
-  Weibo: https://weibo.com/u/6578880151
+  Weibo: http://weibo.com/shengke
 #   DouBan: your-douban-url
-  ZhiHu: https://www.zhihu.com/people/mqxue-yuan
-  E-mail: mailto:150295305@qq.com
+#   ZhiHu: your-zhihu-url
+  E-mail: mailto:zhengjuefei25@163.com
 
 # Social Icons
 social_icons:
@@ -230,7 +230,7 @@ mathjax:
 #baidu_analytics:
 
 # Disqus
-disqus_shortname: catymiao
+disqus_shortname: flashlab
 
 # Baidu Share
 # Available value:
