@@ -4,8 +4,6 @@ $(document).ready(function () {
 
   $(document).trigger('bootstrap:before');
 
-  NexT.utils.lazyLoadPostsImages();
-
   NexT.utils.registerBackToTop();
 
   $('.site-nav-toggle button').on('click', function () {
@@ -21,7 +19,7 @@ $(document).ready(function () {
     });
   });
 
-
+  CONFIG.lazyload && window.lozad('.post-body img').observe();
   CONFIG.fancybox && NexT.utils.wrapImageWithFancyBox();
   NexT.utils.embeddedVideoTransformer();
   NexT.utils.addActiveClassToMenuItem();

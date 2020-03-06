@@ -86,7 +86,10 @@
     scheme: '{{ theme.scheme }}',
     sidebar: {{ theme.sidebar | json_encode }},
     fancybox: {{ theme.fancybox }},
-    motion: {{ theme.use_motion }}
+    motion: {{ theme.use_motion }},
+    lazyload: {{ theme.lazyload }},
+    root: '{{ config.root }}',
+    path: '{{config.search.path}}'
   };
 </script>
 

@@ -33,13 +33,6 @@ NexT.utils = NexT.$u = {
     });
   },
 
-  lazyLoadPostsImages: function () {
-    $('#posts').find('img').lazyload({
-      placeholder: '/images/placeholder.gif',
-      effect: 'fadeIn'
-    });
-  },
-
   registerBackToTop: function () {
     var THRESHOLD = 50;
     var $top = $('.back-to-top');
