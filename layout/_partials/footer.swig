@@ -18,3 +18,11 @@
     NexT.{{ theme.scheme }}
   </a>
 </div>
+{% if (theme.mermaid.enable)  %}
+  <script src='https://unpkg.com/mermaid@{{ config.mermaid.version }}/dist/mermaid.min.js'></script>
+    <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
+{% endif %}
