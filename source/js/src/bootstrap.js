@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
   });
 
-  CONFIG.lazyload && window.lozad('.post-body img').observe();
+  CONFIG.lazyload && window.lozad('.content-wrap img').observe(); //fix instead of post-body
   CONFIG.fancybox && NexT.utils.wrapImageWithFancyBox();
   NexT.utils.embeddedVideoTransformer();
   NexT.utils.addActiveClassToMenuItem();
