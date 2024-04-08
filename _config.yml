@@ -96,8 +96,8 @@ font:
   # Font settings for posts
   # Fallback to `global` font settings.
   posts:
-    external: true
-    family:
+    external: false
+    family: LXGW WenKai Lite
 
   # Font settings for Logo
   # Fallback to `global` font settings.
@@ -380,6 +380,8 @@ vendors:
   # See: http://fontawesome.io/
   fontawesome:
 
+  # image cdn
+  tuchuang: https://pic.313159.xyz
 
 # Assets
 css: css
