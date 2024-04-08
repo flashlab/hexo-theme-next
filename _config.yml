@@ -97,7 +97,7 @@ font:
   # Fallback to `global` font settings.
   posts:
     external: false
-    family: LXGW WenKai Lite
+    family: LXGW WenKai Screen
 
   # Font settings for Logo
   # Fallback to `global` font settings.
