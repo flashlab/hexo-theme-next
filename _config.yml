@@ -349,7 +349,7 @@ vendors:
   _internal: vendors
 
   # Internal version: 2.1.3
-  jquery:
+  jquery: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/2.1.3/jquery.min.js
 
   # Internal version: 2.1.5
   # See: http://fancyapps.com/fancybox/
@@ -362,15 +362,15 @@ vendors:
 
   # Internal version: 1.9.7
   # See: https://github.com/tuupola/jquery_lazyload
-  lazyload:
+  lazyload: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/lozad.js/1.16.0/lozad.min.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
-  velocity:
+  velocity: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/velocity/1.2.2/velocity.min.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
-  velocity_ui:
+  velocity_ui: https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/velocity/1.2.2/velocity.ui.min.js
 
   # Internal version: 0.7.9
   # See: https://faisalman.github.io/ua-parser-js/
