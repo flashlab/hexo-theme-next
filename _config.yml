@@ -366,11 +366,11 @@ vendors:
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
-  velocity: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/velocity/1.2.2/velocity.min.js
+  velocity: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/velocity/2.0.5/velocity.min.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
-  velocity_ui: https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/velocity/1.2.2/velocity.ui.min.js
+  velocity_ui: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/velocity/2.0.5/velocity.ui.min.js
 
   # Internal version: 0.7.9
   # See: https://faisalman.github.io/ua-parser-js/
